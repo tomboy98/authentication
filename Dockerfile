@@ -9,14 +9,14 @@ WORKDIR /app
 COPY package*.json ./
 
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y install mysql-server 
+#RUN DEBIAN_FRONTEND=noninteractive apt-get -y install mysql-server 
 
 
 
 
 
 RUN npm install
-RUN npm install mysql
+#RUN npm install mysql
 # If you are building your code for production
 # RUN npm ci --only=production
 
@@ -30,6 +30,6 @@ COPY . .
 
 
 EXPOSE 8080
-CMD service mysql start && mysql -u root<setup.sql && node server.js
+CMD node server.js
 
 

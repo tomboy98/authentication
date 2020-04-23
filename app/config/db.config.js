@@ -1,8 +1,8 @@
 module.exports = {
-  HOST: "127.0.0.1",
-  USER: "ashwathy",
-  PASSWORD:"yamini",
-  DB: "testdb",
+  HOST: "192.168.80.209",//ip address of your machine
+  USER: "root",
+  PASSWORD:"yamini",//rootpassword
+  DB: "testdb",//already created databas
   dialect: "mysql",
   pool: {
     max: 5,
